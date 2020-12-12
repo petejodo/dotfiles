@@ -29,5 +29,9 @@ set -g fish_color_selection 'white'  '--bold'  '--background=brblack'
 set -g fish_color_user brgreen
 set -g fish_color_valid_path --underline
 
+# Setup Node with NVM
+set -x NVM_DIR ~/.nvm
+nvm use default --silent
+
 # Install Starship
 starship init fish | source
