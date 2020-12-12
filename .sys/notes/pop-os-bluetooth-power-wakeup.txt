@@ -1,0 +1,15 @@
+# This describes how to have certain bluetooth devices power up when
+# the computer wakes up from suspend, typically for a laptop
+
+# First look for the bluetooth devices via
+> cd /sys/bus/usb/drivers
+
+# See the current states of devices on power wakeup
+> grep . /sys/bus/usb/devices/*/power/wakeup
+
+# To enable, run the following (note: sudo may get in your way, can just
+# vim instead)
+> echo enabled > /sys/bus/usb/devices/<device>/power/wakeup
+
+# This isn't permanent however, and instead, you want to put that echo
+# command inside /etc/rc.local
