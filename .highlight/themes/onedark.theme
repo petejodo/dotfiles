@@ -1,0 +1,22 @@
+
+Description = "vim onedark"
+
+Default	= { Colour="#e5c07b" }
+Canvas	= { Colour="#272835" }
+Number	= { Colour="#d19a66" }
+Escape	= { Colour="#61afef" }
+String	= { Colour="#abb2bf" }
+BlockComment	= { Colour="#5c6370" }
+StringPreProc = String
+LineComment   = BlockComment
+Operator      = { Colour="#c678dd" }
+LineNum      = BlockComment
+PreProcessor      = Default
+Interpolation  = { Colour="#e06c75" }
+
+Keywords = {
+  { Colour="#c678dd" },
+  { Colour="#d19a66" },
+  { Colour="#be5046" },
+  { Colour="#abb2bf" },
+}

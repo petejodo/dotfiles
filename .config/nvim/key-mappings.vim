@@ -4,6 +4,9 @@ let g:maplocalleader = ","
 " File-specific shortcuts
 nnoremap <Leader>ff :Ranger<CR>
 
+" File content shortcuts e.g. go-to-line
+nnoremap <Leader>gw *
+
 " Window-specific shortcuts
 nnoremap <Leader>ws <C-W>s
 nnoremap <Leader>wv <C-W>v
@@ -17,6 +20,9 @@ let g:which_key_map.b.d = "Delete buffer w/o closing window"
 
 let g:which_key_map.f = { 'name': "+files" }
 let g:which_key_map.f.f = "Explore files, current tab"
+
+let g:which_key_map.g = { 'name': "+content" }
+let g:which_key_map.g.w = "Highlight word"
 
 let g:which_key_map.w = { 'name': "+windows" }
 let g:which_key_map.w.s = "Split window below"

@@ -30,14 +30,14 @@ set -g fish_color_user brgreen
 set -g fish_color_valid_path --underline
 
 # Set default editor
-set -x EDITOR vim
+set -x EDITOR /usr/bin/nvim
 
 # Setup Node with NVM
 set -x NVM_DIR ~/.nvm
 nvm use default --silent
 
 # Set highlight theme for syntax highlighting
-set -x HIGHLIGHT_STYLE clarity
+set -x HIGHLIGHT_STYLE onedark
 
 # Install Starship
 starship init fish | source
