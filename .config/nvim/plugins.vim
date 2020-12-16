@@ -21,6 +21,9 @@ call plug#begin("~/.vim/plugged")
 
   " File explorer, ranger integration
   Plug 'francoiscabrol/ranger.vim'
+  
+  " Full path fuzzy file, buffer, mru, tag, ...finder for Vim
+  Plug 'ctrlpvim/ctrlp.vim'
 
   " Language-specific plugins
   Plug 'elixir-editors/vim-elixir'
