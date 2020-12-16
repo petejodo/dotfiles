@@ -22,6 +22,9 @@ call plug#begin("~/.vim/plugged")
   " File explorer, ranger integration
   Plug 'francoiscabrol/ranger.vim'
 
+  " Language-specific plugins
+  Plug 'elixir-editors/vim-elixir'
+
 call plug#end()
 
 " Plugin Settings 
