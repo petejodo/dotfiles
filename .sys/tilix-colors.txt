@@ -1,0 +1,26 @@
+#272835           // background
+#EFF0EA           // foreground
+
+#272822           // black 1
+#686767           // black 2
+
+#FF5A56           // red 1
+#FF5A56           // red 2
+
+#A6E22E           // green 1
+#A6E22E           // green 2
+
+#F4BF75           // orange 1
+#F4BF75           // orange 2
+
+#57C7FE           // blue 1
+#57C7FE           // blue 2
+
+#FF69C0           // purple 1
+#FF69C0           // purple 2
+
+#A1EFE4           // turquoise 1
+#A1EFE4           // turquoise 2
+
+#F8F8F2           // grey 1
+#F8F8F2           // grey 2
