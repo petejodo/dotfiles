@@ -1,13 +1,14 @@
 let g:mapleader = "\<Space>"
 let g:maplocalleader = ","
 
-" Buffer utilities
+" List open buffers and prepare input to select buffer 
 nnoremap <C-b> :ls<CR>:b<Space>
 
 " File-specific shortcuts
-nnoremap <silent> <Leader>ff :Ranger<CR>
+nnoremap <silent> <Leader>f :Ranger<CR>
 
-" File content shortcuts e.g. go-to-line
+" Go-to shortcuts
+nnoremap <Leader>gb :ls<CR>:b<Space>
 nnoremap <Leader>gd gd
 nnoremap <Leader>gy gy
 nnoremap <Leader>gi gi
@@ -42,17 +43,16 @@ let g:which_key_map.b = { 'name': "+buffers" }
 let g:which_key_map.b.c = "Close Quickfix List buffer"
 let g:which_key_map.b.d = "Delete buffer w/o closing window"
 
-let g:which_key_map.f = { 'name': "+files" }
-let g:which_key_map.f.f = "Explore files, current tab"
+let g:which_key_map.f = "File explorer"
 
-let g:which_key_map.g = { 'name': "+go-to" }
+let g:which_key_map.g = { 'name': "+goto" }
+let g:which_key_map.g.b = "Go to buffer"
 let g:which_key_map.g.d = "Go to definition"
 let g:which_key_map.g.y = "Go to type definition"
 let g:which_key_map.g.i = "Go to implementation"
 let g:which_key_map.g.r = "Go to references"
 
-let g:which_key_map.s = { 'name': "+symbols" }
-let g:which_key_map.s.r = "Rename symbol"
+let g:which_key_map.r = "Rename symbol"
 
 let g:which_key_map.w = { 'name': "+windows" }
 let g:which_key_map.w.s = "Split window below"

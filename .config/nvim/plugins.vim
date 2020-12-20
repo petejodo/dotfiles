@@ -18,7 +18,8 @@ call plug#begin("~/.vim/plugged")
   " Nice-looking and configurable statusline/tabline
   Plug 'itchyny/lightline.vim'
 
-  " Dependency for ranger, specific to neovim
+  " Dependency for ranger, specific to neovim. Easily close buffer w/o closing
+  " window
   Plug 'rbgrouleff/bclose.vim'
 
   " File explorer, ranger integration
@@ -41,6 +42,9 @@ call plug#begin("~/.vim/plugged")
 
   " Plugin for ripgrep
   Plug 'mileszs/ack.vim'
+
+  " Plugin for easily moving lines of code up and down
+  Plug 'matze/vim-move'
 
 call plug#end()
 
