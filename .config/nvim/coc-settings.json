@@ -1,0 +1,8 @@
+{
+  "coc.preferences.currentFunctionSymbolAutoUpdate": true,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "elixir",
+    "json",
+    "javascript"
+  ]
+}

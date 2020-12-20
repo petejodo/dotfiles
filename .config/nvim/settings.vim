@@ -1,3 +1,4 @@
+filetype plugin indent on       " File type detection
 syntax enable                   " Enables syntax highlighting
 set hidden                      " Required to keep multiple buffers open
 set nowrap                      " Display long lines as just one line
@@ -5,7 +6,7 @@ set encoding=utf-8              " The encoding displayed
 set pumheight=10                " Makes popup menu smaller
 set fileencoding=utf-8          " The encoding written to file
 set ruler                       " Show the cursor position all the time
-" set cmdheight=2                 " More space for displaying messages
+set cmdheight=2                 " More space for displaying messages
 set noshowmode                  " Hide mode like "-- INSERT --" due to lightline plugin
 set iskeyword+=-                " Treat dash separated words as a word text object
 set mouse=a                     " Enable your mouse
@@ -24,7 +25,6 @@ set number                      " Line numbers
 set relativenumber              " Relative line numbers
 set nu rnu                      " Turn on hybric line numbers
 set cursorline                  " Enable highlighting of the current line
-" set background=dark             " Tell vim what the background color looks like
 set showtabline=2               " Always show tabs
 set nobackup                    " Recommended setting by coc
 set nowritebackup               " Recommended setting by coc
@@ -32,6 +32,8 @@ set updatetime=300              " Faster completion
 set timeoutlen=500              " By default timeoutlen is 1000 ms
 set formatoptions-=cro          " Stop the newline continuation of comments
 set clipboard=unnamedplus       " Copy-paste between vim and everything else:set number relativenumber
+set shortmess+=c                " Don't pass messages to ins-completion-menu
+set signcolumn=number           " Merge signcolumn and number column into one
 
 " Enable theming support
 if (has("termguicolors"))
