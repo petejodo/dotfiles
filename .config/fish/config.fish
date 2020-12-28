@@ -1,7 +1,11 @@
 source ~/.config/fish/alias.fish
+source ~/.config/fish/tmp_fish_add_path.fish
 
 # Configure Jump
 # status --is-interactive; and source (jump shell fish | psub)
+
+# Add to PATH
+fish_add_path ~/.cargo/bin
 
 # Load all saved ssh keys
 /usr/bin/ssh-add -A ^/dev/null
@@ -30,11 +34,10 @@ set -g fish_color_user brgreen
 set -g fish_color_valid_path --underline
 
 # Set default editor
-set -x EDITOR /usr/bin/nvim
+set -x EDITOR nvim
 
-# Setup Node with NVM
-set -x NVM_DIR ~/.nvm
-nvm use default --silent
+# Setup Node with FNM
+fnm env | source
 
 # Set highlight theme for syntax highlighting
 set -x HIGHLIGHT_STYLE onedark
