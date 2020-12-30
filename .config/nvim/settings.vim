@@ -28,7 +28,7 @@ set cursorline                  " Enable highlighting of the current line
 set nobackup                    " Recommended setting by coc
 set nowritebackup               " Recommended setting by coc
 set updatetime=300              " Faster completion
-set timeoutlen=300              " By default timeoutlen is 1000 ms
+set timeoutlen=500              " By default timeoutlen is 1000 ms
 set formatoptions-=cro          " Stop the newline continuation of comments
 set clipboard=unnamedplus       " Copy-paste between vim and everything else:set number relativenumber
 set shortmess+=c                " Don't pass messages to ins-completion-menu
@@ -42,10 +42,3 @@ endif
 " Auto source when writing to init.vm to reflect changes, alternatively run :source $MYVIMRC
 au! BufWritePost $MYVIMRC source %
 
-" Allows Alt- keys (or Meta-) to work 
-let c='a'
-while c <= 'z'
-  exec "map \e".c." <M-".c.">"
-  exec "map! \e".c." <M-".c.">"
-  let c = nr2char(1+char2nr(c))
-endw

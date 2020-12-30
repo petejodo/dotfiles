@@ -36,6 +36,7 @@ call plug#begin("~/.vim/plugged")
 
   " Language-specific plugins
   Plug 'elixir-editors/vim-elixir'
+  Plug 'elixir-lsp/coc-elixir', {'do': 'yarn install && yarn prepack'}
 
   " Vim start page
   Plug 'mhinz/vim-startify'
@@ -80,6 +81,9 @@ let g:lightline.component_function = {
   \ 'cocstatus': 'coc#status',
   \ 'currentfunction': 'CocCurrentFunction'
   \}
+
+" Set the modifier key for vim-move to Ctrl
+let g:move_key_modifier = 'C'
 
 " ack.vim --- {{{
 
