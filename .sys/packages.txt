@@ -2,4 +2,4 @@ ranger
 fzf
 ripgrep
 yadm
-highlight   # for ranger syntax highlighting
+highlight
