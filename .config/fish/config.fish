@@ -6,6 +6,7 @@ source ~/.config/fish/tmp_fish_add_path.fish
 
 # Add to PATH
 fish_add_path ~/.cargo/bin
+fish_add_path ~/.bin
 
 # Load all saved ssh keys
 /usr/bin/ssh-add -A ^/dev/null
