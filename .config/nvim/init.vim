@@ -112,6 +112,7 @@ let g:maplocalleader = ","
 let g:move_key_modifier = 'C'
 
 lua << EOF
+  local completion = require('completion')
   -- local galaxyline = require('galaxyline')
   local lspconfig = require('lspconfig')
   local lualine = require('lualine')
@@ -129,7 +130,7 @@ lua << EOF
    
   lspconfig.elixirls.setup {
     cmd = { "elixir-ls" },
-    on_attach = require("completion").on_attach,
+    on_attach = completion.on_attach,
   }
 
   -- TODO integrate trouble provider into telescope?
@@ -241,7 +242,7 @@ nnoremap <Leader>bd <cmd>bdelete<CR>
 
 " One Dark theme overrides
 let g:onedark_color_overrides = {
-\ "black": {"gui": "#272835", "cterm": "235", "cterm16": "0" }
+\ "black": {"gui": "#282a36", "cterm": "235", "cterm16": "0" }
 \}
 
 colorscheme onedark
