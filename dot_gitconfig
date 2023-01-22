@@ -1,0 +1,30 @@
+[user]
+	email = pete.jodogne@gmail.com
+	name = Peter Jodogne
+
+[init]
+	defaultBranch = main
+
+[core]
+	editor = hx
+	pager = delta
+	
+[interactive]
+	diffFilter = delta --color-only --features=interactive --dark
+
+[delta]
+	features = unobtrusive-line-numbers decorations
+	whitespace-error-style = 22 reverse
+
+[delta "unobtrusive-line-numbers"]
+	line-numbers = true
+    line-numbers-minus-style = red
+    line-numbers-plus-style = green
+    line-numbers-left-style = white
+    line-numbers-right-style = white
+
+[delta "decorations"]
+	commit-decoration-style = bold yellow box ul
+    file-style = bold white
+    file-decoration-style = yellow ul ol
+    hunk-header-decoration-style = none
