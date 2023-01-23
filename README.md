@@ -10,6 +10,7 @@ Packages that I want on every system:
 - exa                  - via `apt`
 - fd (fd-find)         - via `apt`
 - fzf                  - via `apt`
+- glow                 - via `apt` (needs [charm repo](#charm-repo) added)
 - helix                - via `linuxbrew` (figure out a way to install some other way)
 - htop                 - via `apt`
 - pgcli                - via `apt`
