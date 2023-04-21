@@ -6,6 +6,7 @@ Packages that I want on every system:
 
 - asdf                 - via `git clone`
 - bat (batcat)         - via `apt`
+- chezmoi              - via `asdf`
 - delta (git-delta)    - via `cargo install`
 - exa                  - via `apt`
 - fd (fd-find)         - via `apt`
@@ -13,8 +14,10 @@ Packages that I want on every system:
 - glow                 - via `apt` (needs [charm repo](#charm-repo) added)
 - helix                - via `linuxbrew` (figure out a way to install some other way)
 - htop                 - via `apt`
+- nala                 - via `apt`
 - pgcli                - via `apt`
 - ripgrep              - via `apt`
+- starship             - via `curl` (see https://starship.rs)
 
 ## DConf Settings
 
