@@ -1,3 +1,6 @@
+[include]
+	path = ~/.config/git-delta/themes.gitconfig
+
 [user]
 	email = pete.jodogne@gmail.com
 	name = Peter Jodogne
@@ -10,21 +13,15 @@
 	pager = delta
 	
 [interactive]
-	diffFilter = delta --color-only --features=interactive --dark
+	diffFilter = delta --color-only
+
+[merge]
+	conflictstyle = diff3
+
+[diff]
+	colorMoved = default
 
 [delta]
-	features = unobtrusive-line-numbers decorations
+	navigate = true
+	features = "woolly-mammoth"
 	whitespace-error-style = 22 reverse
-
-[delta "unobtrusive-line-numbers"]
-	line-numbers = true
-    line-numbers-minus-style = red
-    line-numbers-plus-style = green
-    line-numbers-left-style = white
-    line-numbers-right-style = white
-
-[delta "decorations"]
-	commit-decoration-style = bold yellow box ul
-    file-style = bold white
-    file-decoration-style = yellow ul ol
-    hunk-header-decoration-style = none
