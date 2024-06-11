@@ -17,5 +17,6 @@ if status is-interactive
 
     alias gs="git status"
 
+    direnv hook fish | source
     starship init fish | source 
 end
